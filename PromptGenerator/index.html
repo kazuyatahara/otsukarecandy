@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星詠みプロンプト君 | Midjourney Prompt Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div id="star-background"></div>
+  <div id="nebula-overlay"></div>
+
+  <div id="app">
+    <header>
+      <h1 class="title">星詠みプロンプト君</h1>
+      <p class="subtitle">占いの物語を、神秘的なプロンプトへ</p>
+    </header>
+
+    <main class="container">
+      <div class="input-card card">
+        <label for="user-text">ストーリーや文章を入力してください</label>
+        <textarea id="user-text" placeholder="例：運命の輪が回り始め、彼女の前に金色の道が現れる。"></textarea>
+        <button id="generate-btn">天啓を得る（生成）</button>
+      </div>
+
+      <div id="result-container" class="result-container hidden">
+        <h2 class="section-title">生成されたプロンプト</h2>
+        <div id="prompt-list" class="prompt-grid"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Cosmic Prompt Lab.</p>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
